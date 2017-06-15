@@ -1,0 +1,118 @@
+/*body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}*/
+
+/*
+ * body
+ * font
+ */
+
+body {
+  font-family: "Helvetica NEUE", sans-serif;
+  background: #eeeeee; /* f에 가까울수록 흰색, 0에 가까울수록 검은색, eeeeee가 가장 무난하게 쓰여요 */
+  border: 1px solid #efefef;
+}
+
+/* article */
+
+article {
+  background: #ffffff; /* 배경색 */
+  padding: 10px 20px; /* 사이간격, 있고 없고가 극명한 친구, 가독성에 큰 도움, 같은 값을 넣어도 뭔가 위아래에 비해 좌우는 좁아보임 */
+  max-width: 500px; /* 그냥 width를 넣으면 작을 때 짤려요 */
+  margin: auto; /* width를 꼭 지정해줬기 때문에 auto를 쓸 수 있어요 */
+}
+
+/*
+  Class Selector
+  특정 요소에만 스타일링을 주고 싶어요
+
+  단, 중복가능성이 높은 클래스 이름에 스타일링을 정확하게 주고 싶다면 space를 활용해요
+*/
+
+.author-area {
+  /* thumb의 height를 넣어줌 */
+  height: 80px;
+}
+
+.author-area .thumb-area {
+  /* 가로너비 */
+  width: 80px;
+  /* 세로높이 */
+  height: 80px;
+  /* 로딩중에 백그라운드 톤과 통일된 색상을 보여줘서 로딩 중일 것이라는 기대감을 줄 것 */
+  /* 웹의 대부분 테크닉은 실제로 그렇게 되는 것은 아니지만, 그런 것처럼 보여주는 것이 많아요 */
+  background: #eeeeee;
+  /* 왼쪽에 붙이겠다 */
+  float: left;
+}
+
+.author-area .thumb-area img {
+  /* 가로너비 */
+  width: 80px;
+  /* 세로높이 */
+  height: 80px;
+}
+
+.author-area .info {
+  /* padding: 위아래, 좌우 */
+  /* padding: 상하좌우 */
+  padding: 10px 50px;
+  /* layout할 때 설명 */
+  /* Float의 오른쪽에 있는 친구에 넣는 것 */
+  overflow: hidden;
+}
+
+.author-area .name {
+  /* 사이간격을 아래로만 */
+  padding-bottom: 3px;
+}
+
+/* 공통된 요소는 늘 묶어주세요 */
+.author-area a {
+  text-decoration: none;
+}
+
+.author-area a:hover {
+  text-decoration: underline;
+}
+
+.author-area .name a {
+  color: royalblue;
+}
+
+.author-area .desc a {
+  color: darkgrey;
+}
+
+.text-area {
+
+}
+
+/* 이미지의 습성은 자기 본래의 크기만큼 보여주려고 하는 것이에요, 그래서 사이즈 조절이 필요해요 */
+.media-area img {
+  /* width에 %를 넣으면 부모요소의 가로사이즈를 기준 */
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.social-area {
+  /* 외곽선은 border로 넣어줘요, solid말고도 다양한 옵션이 있어요 */
+  border-top: 1px solid #666666;
+}
+
+.social-area button {
+  /* 외곽선은 border라고 부릅니다 */
+  /* 원래 기본적으로 들어가있는 외곽선, 백그라운드, 패딩을 빼줍니다 */
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+/* HTML CSS는 크게 잡아놓은 뒤에는, 디테일 싸움이에요 */
+/* 디테일을 잡을 때는 개발자 도구를 통해서 수정해보세요- */
+/* 실험해보기 좋고, 남의 코드를 보기 좋아요 */

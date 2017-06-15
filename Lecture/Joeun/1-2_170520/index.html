@@ -1,0 +1,62 @@
+<!--
+  Node.js라는 것은 무엇이냐?
+  Javascript는 원래 Front-end 영역
+  Javascript는 브라우저 위에서만 동작 가능했음(대표적으로 파일 읽기 쓰기 등이 불가했음)
+  Node.js는 Back-end 즉 서버 영역을 위한 자바스크립트(웹 생태계에 대단히 많은 영향을 끼침)
+  워드프레스 PHP -> Node.js
+  성능적인 이슈가 대용량일 때는 있지만, 그 전까지는 서버를 만들기가 쉬우므로 자주 활용
+  (Apache와 유사해요)
+
+  Node의 버전이 중간에 5버전이나 뛰었어요, 버전이 높은 것은 크게 신경쓰지 마셔요
+  Express를 이용해서 보다 쉽게 서버를 구축할 수 있어요
+  node --version 으로 버전을 확인할 수 있어요
+  npm --version은 찍히는지가 중요해요(버전 확인은 설치가 잘 되었는지 여부를 확인하기에 좋아요)
+  (윈도우) npm install -g express-generator 로 설치하세요
+  npm은 패키지 매니저에요
+  맥에서 권한 유저로 문제가 발생하면 sudo를 붙여주세요
+
+  HTML이 시간이 좀 지나면 굉장히 노가다성이 강해요
+  한 번 수정할 때, 해당 내용이 담긴 모든 곳을 일일히 수정해야 하는 경우도 있어요
+  HTML은 문서를 위해 만들어졌기 때문에 공통적 요소 등에 대해 고려가 되어있지 않아요
+  첫 시간부터 Express를 가르치는 까닭은 그런 부분을 극복하기 위해서에요
+  윈도우에서는 명령어 입력시 cd를 dir로 바꿔주셔야 할거에요
+  윈도우는 명령 프롬프트, 맥은 배쉬셀을 사용해서 달라요
+
+  지금까지 한 것
+  - Node.js 설치
+  - Terminal실행
+  - node --version
+  - npm --version
+  - (sudo) npm install -g express-generator
+  - express --view=hbs folder_name
+  - cd folder_name && npm install
+  - npm start (node ./bin/www)
+
+  윈도우는 ls 대신에 dir이에요
+  다른 컴퓨터에서 똑같은 환경을 구축해보면 또 새로울 수 있어요
+
+  어디까지나 공통이고, 어디까지나 지역인지를 구분하는 것이 매우 중요합니다
+  공통인 것들을 layout에 짜야 해요, 트위터가 페이스북보다 공통적 요소가 많아서 보다 쉬워요
+  오늘은 안에 있는 post card(댓글 제외)를 HTML/CSS 짜볼거에요
+
+  스펙산정
+  
+  영역을 네 가지로 구분해서 채워넣음
+  (큰 것을 제일 먼저 짜고, 하이라키 순으로 내려가요)
+
+  CSS
+  - Font
+  - Background
+  - Padding, Margin, Border
+  - Class Selector
+  - width, height
+  - float
+
+  개발에도 순서가 있으므로, 순서를 따라가는 것이 굉장히 중요해요
+
+  흔히 하는 실수를 밸리데이터가 많이 잡아줘요-
+  선생님께 보내기 전에 HTML/CSS 모두 다 밸리데이팅하자!
+
+  port 바꾸고 싶으시면 bin폴더 안에 있는 www에서 port 번호를 변경하세요
+  터미널 내역도 저장할 수 있어요
+-->
